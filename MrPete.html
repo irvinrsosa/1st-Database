@@ -1,0 +1,161 @@
+
+<html>
+ <head>
+
+<title>Mr. Pete's Pet Shop</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+ </head>
+
+
+ <body>
+<BODY BGCOLOR="#8e8ef1">
+<form action="confirm-lab1.php" method="post">
+
+<h1 align="center">Welcome to Pete's Pet Shop!</h1>
+
+<table align="center">
+
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+    <th>Texture and Type</th>
+    <th>Quantity</th>
+  </tr>
+  <tr>
+    <td> KONG Plush Rosie the Rhino Squeaker Dog Toy </td>
+    <td>$7.50</td>
+    <td>Toy</td>
+    <td align="center"><input type="text" name="dog_toy" size="7"</td>
+  </tr>
+  <tr>
+    <td>KONG Squirrel Cat Nip Toy</td>
+    <td>$7.50</td>
+    <td>Toy</td>
+    <td align="center"><input type="text" name="cat_toy" size="7"</td>
+  </tr>
+  <tr>
+    <td>Blue Buffalo, Blue Wilderness Indoor Adult Cat Food</td>
+    <td>$33.99</td>
+    <td>Dry, Chicken</td>
+    <td align="center"><input type="text" name="adult_blue" size="7"</td>
+  </tr>
+  <tr>
+    <td>Nutro Max Kitten Food</td>
+    <td>$24.50</td>
+    <td>Dry, Roasted Chicken</td>
+    <td align="center"><input type="text" name="kitt_nutro" size="7"</td>
+  </tr>
+  <tr>
+    <td>Blue Buffalo, Blue Life Protection Formula Puppy Food</td>
+    <td>$45.99</td>
+    <td>Dry, Chicken and Brown Rice</td>
+    <td align="center"><input type="text" name="pup_form" size="7"</td>
+  </tr>
+  <tr>
+    <td>Eukanuba Adult Maintenance Dog Food</td>
+    <td>$33.99</td>
+    <td>Dry, Lamb and Rice</td>
+    <td align="center"><input type="text" name="dog_euk" size="7"</td>
+  </tr>
+  <tr>
+    <td>Cesar Savory Delights Adult Dog Food</td>
+    <td>$0.75</td>
+    <td>Wet, 1 Can</td>
+    <td align="center"><input type="text" name="dog_ces" size="7"</td>
+  </tr>
+  <tr>
+    <td>Fancy Feast Classic Adult Cat Food</td>
+    <td>$0.59</td>
+    <td>Wet, 1 Can</td>
+    <td align="center"><input type="text" name="cat_fan" size="7"</td>
+  </tr>
+  <tr>
+  <td colspan="4" align="center">"If you buy more WET food you can save money."</td>
+  </tr>
+  <tr>
+  <td colspan="2" align="center">1-4 cans ordered is normal price</td>
+  <td colspan="2" align="center">5-10 cans ordered is $0.03 off each can</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">11-15 cans ordered is $0.04 off each can</td>
+    <td colspan="2" align="center">16+ cans ordered is $0.05 off each can</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center">"Are you a returning customer?"
+      <select name="find">
+      <option value="a">Select an option.</option>
+      <option value="b">Yes I am!</option>
+      <option value="c">No.</option>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td colspan="4" align="left">Enter Street Address,city and zipcode for shipping:<input type="text" name="Address">
+  <colspan="4">State:
+  <select name="state">
+    <<option value="--"> </option>
+  	<option value="AL">Alabama</option>
+  	<option value="AK">Alaska</option>
+  	<option value="AZ">Arizona</option>
+  	<option value="AR">Arkansas</option>
+  	<option value="CA">California</option>
+  	<option value="CO">Colorado</option>
+  	<option value="CT">Connecticut</option>
+  	<option value="DE">Delaware</option>
+  	<option value="DC">District Of Columbia</option>
+  	<option value="FL">Florida</option>
+  	<option value="GA">Georgia</option>
+  	<option value="HI">Hawaii</option>
+  	<option value="ID">Idaho</option>
+  	<option value="IL">Illinois</option>
+  	<option value="IN">Indiana</option>
+  	<option value="IA">Iowa</option>
+  	<option value="KS">Kansas</option>
+  	<option value="KY">Kentucky</option>
+  	<option value="LA">Louisiana</option>
+  	<option value="ME">Maine</option>
+  	<option value="MD">Maryland</option>
+  	<option value="MA">Massachusetts</option>
+  	<option value="MI">Michigan</option>
+  	<option value="MN">Minnesota</option>
+  	<option value="MS">Mississippi</option>
+  	<option value="MO">Missouri</option>
+  	<option value="MT">Montana</option>
+  	<option value="NE">Nebraska</option>
+  	<option value="NV">Nevada</option>
+  	<option value="NH">New Hampshire</option>
+  	<option value="NJ">New Jersey</option>
+  	<option value="NM">New Mexico</option>
+  	<option value="NY">New York</option>
+  	<option value="NC">North Carolina</option>
+  	<option value="ND">North Dakota</option>
+  	<option value="OH">Ohio</option>
+  	<option value="OK">Oklahoma</option>
+  	<option value="OR">Oregon</option>
+  	<option value="PA">Pennsylvania</option>
+  	<option value="RI">Rhode Island</option>
+  	<option value="SC">South Carolina</option>
+  	<option value="SD">South Dakota</option>
+  	<option value="TN">Tennessee</option>
+  	<option value="TX">Texas</option>
+  	<option value="UT">Utah</option>
+  	<option value="VT">Vermont</option>
+  	<option value="VA">Virginia</option>
+  	<option value="WA">Washington</option>
+  	<option value="WV">West Virginia</option>
+  	<option value="WI">Wisconsin</option>
+  	<option value="WY">Wyoming</option>
+  </select>
+</tr>
+<tr>
+    <td colspan="4" align="center"><input type="submit" value="Submit Order"></td>
+  </tr>
+
+</table>
+</form>
+</body>
+</html>
